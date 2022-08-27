@@ -13,6 +13,7 @@ class QuestionView(View):
             "form": form, 
             "questions": questions
         })
+        
     def post(self, request):
         form = QuestionForm(request.POST)
         if form.is_valid():
